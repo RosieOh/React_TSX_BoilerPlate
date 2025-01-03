@@ -1,0 +1,32 @@
+/* 팝업 스타일 */
+.popup {
+    position: fixed;
+    bottom: 20px;  /* 화면 아래쪽에 위치 */
+    left: 50%;
+    transform: translateX(-50%);  /* 화면 중앙 정렬 */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInOut 3s forwards;  /* 애니메이션 추가 */
+  }
+  
+  /* 팝업의 fade-in, fade-out 애니메이션 */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
